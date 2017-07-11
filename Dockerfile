@@ -18,7 +18,7 @@ COPY ./index.php /var/www/site/index.php
 COPY ./supervisord.conf /etc/supervisord.conf
 COPY ./start.sh /start.sh
 
-VOLUME["/var/www/site"]
+VOLUME ["/var/www/site"]
 
 WORKDIR /var/www/site
 EXPOSE 4711

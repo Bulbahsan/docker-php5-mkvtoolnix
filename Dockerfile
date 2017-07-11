@@ -10,7 +10,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
 
 RUN apk add php5 php5-mysql php5-mysqli php5-pdo \
     php5-pdo_mysql php5-json php5-xml php5-zip php5-zlib php5-sqlite3 php5-openssl \
-    php5-pdo_sqlite php5-iconv php5-curl && rm -rf /var/cache/apk/* && \
+    php5-pdo_sqlite php5-iconv php5-curl php5-ctype && rm -rf /var/cache/apk/* && \
     ln -s /usr/bin/php5 /usr/bin/php
 
 COPY ./php.ini /etc/php5/conf.d/php.ini
